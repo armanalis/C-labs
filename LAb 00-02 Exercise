@@ -1,0 +1,20 @@
+A file defines a set of rectangles with the following format:
+* Each row of the file contains 1 string and 2 real numbers:
+  - The string (of 4 characters) is the rectangle identifier,
+  - The two numbers specify the x and y coordinates,
+    respectively, of one of its vertices
+* For each rectangle, there are two lines in the file specifying
+  the coordinate of two opposite vertices (top-right and
+  bottom-left or top-left and bottom-right).
+  Notice that, in general, the two rows defining a rectangle are
+  not consecutive, and that it is not known which vertex they
+  specify.
+In any case, suppose the maximum number of rectangles is 100.
+
+Write a C program that receives three file names on the command line:
+- The first file is an input file, and it contains all rectangles
+  specifications as previously indicated
+- The second file is an output file, and it must contain the
+  name of the rectangles ordered by ascending area values.
+- The third file is an output file, and it must contain the
+  name of the rectangles ordered by ascending perimeter values.
